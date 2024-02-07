@@ -1,9 +1,6 @@
-from car import Car
+from abc import ABC
 
-class Engine(Car):
-    def __init__(self, last_service_date):
-        self.last_service_date = last_service_date
 
-    @abstractmethod
+class Engine(ABC):
     def needs_service(self):
         pass
